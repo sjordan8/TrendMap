@@ -1,16 +1,27 @@
 .top-bar {
-  background-color: #000000;
+  background-color: #38A1F3;
   color: #FFFFFF;
+  border-bottom: 1px solid #cacaca;
+  -webkit-box-shadow: 0 0 40px #cacaca;
+          box-shadow: 0 0 40px #cacaca;
 }
 
 .dropdown.menu {
-  background-color:#000000;
+  background-color:#38A1F3;
   color:#FFFFFF;
 }
 
 .card {
-  border-color: #262626;
+  border-color: #38A1F3;
   border: 1px;
+  -webkit-box-shadow: 0 0 40px #cacaca;
+          box-shadow: 0 0 40px #cacaca;
+}
+
+.card-divider {
+  background-color: #38A1F3;
+  color: #FFFFFF;
+  border-bottom: 1px solid #cacaca;
   -webkit-box-shadow: 0 0 40px #cacaca;
           box-shadow: 0 0 40px #cacaca;
 }
