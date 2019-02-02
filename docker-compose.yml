@@ -1,0 +1,11 @@
+version: '3'
+services:
+    web:
+        container_name: web
+        build: .
+        volumes:
+            - .:/src
+        command: python3 /src/TrendMap/manage.py runserver 0.0.0.0:8000
+        ports:
+            - "8000:8000"
+

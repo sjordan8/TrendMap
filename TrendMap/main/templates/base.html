@@ -1,0 +1,30 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrendMap</title>
+    <link rel="stylesheet" href="{% static "css/foundation.css" %}">
+    <link rel="stylesheet" href="{% static "css/app.css" %}">
+  </head>
+  <body>
+    <div class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">Trend Map</li>
+          <li><a href="/">Home</a></li>
+        </ul>
+      </div>
+    </div>
+    {% block body %}
+    {% endblock %}
+    <script src="{% static "js/vendor/jquery.js" %}"></script>
+    <script src="{% static "js/vendor/what-input.js" %}"></script>
+    <script src="{% static "js/vendor/foundation.js" %}"></script>
+    <script src="{% static "js/app.js" %}"></script>
+    {% block scripts %}
+    {% endblock %}
+  </body>
+</html>
