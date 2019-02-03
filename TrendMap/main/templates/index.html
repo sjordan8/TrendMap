@@ -13,10 +13,13 @@
     <div class="cell large-4 offset-4">
       <div class="card">
         <div class="card-divider">
-          <h4>Recent Tweets</h4>
+          <h4>Authenticate</h4>
         </div>
         <div class="card-section">
-          <h5>This will display text</h5>
+          <form action="/begin_twitter_authentication/" method="post">
+              {% csrf_token %}
+              <input type="submit" class="button expanded" value="Authenticate">
+          </form>
         </div>
       </div>
     </div>
