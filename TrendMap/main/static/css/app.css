@@ -14,8 +14,8 @@
 .card {
   border-color: #38A1F3;
   border: 1px;
-  -webkit-box-shadow: 10px 10px 10px 10px #cacaca;
-          box-shadow: 10px 10px 10px 10px #cacaca;
+  -webkit-box-shadow: 5px 5px 5px 5px #cacaca;
+          box-shadow: 5px 5px 5px 5px #cacaca;
 }
 
 .card-divider {

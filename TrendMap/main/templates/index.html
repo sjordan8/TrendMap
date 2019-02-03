@@ -9,16 +9,41 @@
     </div>
   </div>
 
-  <div class="grid-x grid-padding-x">
-    <div class="cell large-4 offset-4">
+  <div class="grid-x grid-padding-x large-up-3">
+    <div class="cell">
       <div class="card">
         <div class="card-divider">
-          <h4>Authenticate</h4>
+          <h4>Authentication</h4>
         </div>
         <div class="card-section">
           <form action="/begin_auth/" method="post">
-              {% csrf_token %}
-              <input type="submit" class="button expanded" value="Authenticate">
+            {% csrf_token %}
+            <input type="submit" class="button expanded" value="Authenticate">
+          </form>
+        </div>
+      </div>
+    </div>
+    {% for tweet in public_tweets %}
+    <div class="cell">
+      <div class="card">
+        <div class="card-divider">
+          <h4>{{ tweet.id }}</h4>
+        </div>
+        <div class="card-section">
+          <h6>{{ tweet.text }}</h6>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    <div class="cell">
+      <div class="card">
+        <div class="card-divider">
+          <h4>Grab Tweets</h4>
+        </div>
+        <div class="card-section">
+          <form action="/get_tweets/" method="post">
+            {% csrf_token %}
+            <input type="submit" class="button expanded" value="Pull More">
           </form>
         </div>
       </div>

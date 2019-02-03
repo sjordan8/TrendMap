@@ -82,9 +82,8 @@ def get_tweets(request):
     api = tweepy.API(auth)
     public_tweets = api.home_timeline()
     for tweet in public_tweets:
-        print(tweet.text)
+        print(tweet)
     context= {
         'public_tweets': public_tweets,
     }
     return render(request, 'index.html', context)
-    
