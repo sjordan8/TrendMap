@@ -5,5 +5,7 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('begin_twitter_authentication/', views.begin_twitter_authentication),
+    path('begin_auth/', views.begin_auth),
+    path('verify/', views.verify),
+    path('get_tweets/', views.get_tweets),
 ]

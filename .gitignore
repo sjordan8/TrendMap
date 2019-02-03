@@ -104,4 +104,4 @@ venv.bak/
 .mypy_cache/
 
 # API keys
-TrendMap/certs/client_secrets.json
+certs/client_secrets.json

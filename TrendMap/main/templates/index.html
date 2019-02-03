@@ -4,8 +4,8 @@
 {% block body %}
 <div class="grid-container">
   <div class="grid-y grid-padding-y">
-    <div class="cell large-12">
-      <h1>Twitter Data</h1>
+    <div class="cell large-4 offset-4">
+          <h1>Twitter Data</h1>
     </div>
   </div>
 
@@ -16,7 +16,7 @@
           <h4>Authenticate</h4>
         </div>
         <div class="card-section">
-          <form action="/begin_twitter_authentication/" method="post">
+          <form action="/begin_auth/" method="post">
               {% csrf_token %}
               <input type="submit" class="button expanded" value="Authenticate">
           </form>
@@ -31,5 +31,4 @@
 
 {% block scripts %}
 {% endblock %}
-</body>
 </html>
